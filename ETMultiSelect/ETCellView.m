@@ -18,7 +18,7 @@
         self.backgroundColor = [UIColor clearColor];
         self.autoresizingMask = UIViewAutoresizingNone;
 
-        CGFloat borderWidth = 6.0f;
+        CGFloat borderWidth = 3.0f;
         UIView *bgView = [[UIView alloc] initWithFrame:frame];
         bgView.layer.borderColor = [UIColor redColor].CGColor;
         bgView.layer.borderWidth = borderWidth;

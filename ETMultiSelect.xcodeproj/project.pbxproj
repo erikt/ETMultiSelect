@@ -19,6 +19,7 @@
 		0324D7881645D8E200ED99D8 /* ETViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324D7871645D8E200ED99D8 /* ETViewController.m */; };
 		0324D78B1645D8E200ED99D8 /* ETViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0324D7891645D8E200ED99D8 /* ETViewController_iPhone.xib */; };
 		0324D78E1645D8E200ED99D8 /* ETViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0324D78C1645D8E200ED99D8 /* ETViewController_iPad.xib */; };
+		0324D7961645DB8800ED99D8 /* ETCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324D7951645DB8800ED99D8 /* ETCellView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		0324D7871645D8E200ED99D8 /* ETViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETViewController.m; sourceTree = "<group>"; };
 		0324D78A1645D8E200ED99D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ETViewController_iPhone.xib; sourceTree = "<group>"; };
 		0324D78D1645D8E200ED99D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ETViewController_iPad.xib; sourceTree = "<group>"; };
+		0324D7941645DB8800ED99D8 /* ETCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETCellView.h; sourceTree = "<group>"; };
+		0324D7951645DB8800ED99D8 /* ETCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETCellView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				0324D77E1645D8E200ED99D8 /* ETAppDelegate.m */,
 				0324D7861645D8E200ED99D8 /* ETViewController.h */,
 				0324D7871645D8E200ED99D8 /* ETViewController.m */,
+				0324D7941645DB8800ED99D8 /* ETCellView.h */,
+				0324D7951645DB8800ED99D8 /* ETCellView.m */,
 				0324D7891645D8E200ED99D8 /* ETViewController_iPhone.xib */,
 				0324D78C1645D8E200ED99D8 /* ETViewController_iPad.xib */,
 				0324D7751645D8E200ED99D8 /* Supporting Files */,
@@ -181,6 +186,7 @@
 				0324D77B1645D8E200ED99D8 /* main.m in Sources */,
 				0324D77F1645D8E200ED99D8 /* ETAppDelegate.m in Sources */,
 				0324D7881645D8E200ED99D8 /* ETViewController.m in Sources */,
+				0324D7961645DB8800ED99D8 /* ETCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

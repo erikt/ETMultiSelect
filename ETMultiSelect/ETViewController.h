@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ETViewController : UIViewController
+@interface ETViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>
+
+@property (weak,nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end

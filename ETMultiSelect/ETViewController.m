@@ -7,23 +7,35 @@
 //
 
 #import "ETViewController.h"
-
-@interface ETViewController ()
-
-@end
+#import "ETCellView.h"
 
 @implementation ETViewController
 
-- (void)viewDidLoad
-{
+static NSString *cellIdentifier = @"cvCell";
+
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    // Register our custom collection view cell
+    [self.collectionView registerClass:ETCellView.class forCellWithReuseIdentifier:cellIdentifier];
+    
+    // Make it possible to select multiple cells
+    self.collectionView.allowsMultipleSelection = YES;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UICollectionViewDataSource
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 10;
+}
+
+#pragma mark - UICollectionViewDelegate
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    ETCellView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    return cell;
 }
 
 @end

@@ -11,13 +11,11 @@
 
 @implementation ETViewController
 
-static NSString *cellIdentifier = @"cvCell";
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     // Register our custom collection view cell
-    [self.collectionView registerClass:ETCellView.class forCellWithReuseIdentifier:cellIdentifier];
+    [self.collectionView registerClass:ETCellView.class forCellWithReuseIdentifier:@"cvCell"];
     
     // Make it possible to select multiple cells
     self.collectionView.allowsMultipleSelection = YES;
@@ -34,7 +32,7 @@ static NSString *cellIdentifier = @"cvCell";
 
 #pragma mark - UICollectionViewDelegate
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    ETCellView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    ETCellView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cvCell" forIndexPath:indexPath];
     return cell;
 }
 

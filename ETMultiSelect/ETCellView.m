@@ -18,16 +18,13 @@
         self.backgroundColor = [UIColor clearColor];
         self.autoresizingMask = UIViewAutoresizingNone;
 
-        CGFloat borderWidth = 3.0f;
+        CGFloat borderWidth = 6.0f;
         UIView *bgView = [[UIView alloc] initWithFrame:frame];
         bgView.layer.borderColor = [UIColor redColor].CGColor;
         bgView.layer.borderWidth = borderWidth;
         self.selectedBackgroundView = bgView;
         
-        CGRect myContentRect = CGRectMake(self.contentView.bounds.origin.x + borderWidth,
-                                          self.contentView.bounds.origin.y + borderWidth,
-                                          self.contentView.bounds.size.width - 2*borderWidth,
-                                          self.contentView.bounds.size.height - 2*borderWidth);
+        CGRect myContentRect = CGRectInset(self.contentView.bounds, borderWidth, borderWidth);
         
         UIView *myContentView = [[UIView alloc] initWithFrame:myContentRect];
         myContentView.backgroundColor = [UIColor whiteColor];
